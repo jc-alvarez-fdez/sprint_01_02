@@ -228,6 +228,69 @@ article {
         }
       }
 
+// Artículo 3 dowload
+#dowload {
+
+    padding: 0 4em;
+    margin-bottom: 30px;
+
+    .row {
+        gap: 15px;
+        justify-content: center;
+        align-items: stretch;
+        font-size: .8em;
+        height: 450px;
+        div:nth-child(1) {
+            align-self: flex-start;
+        }
+        div:nth-child(2) {
+            align-self: center ;
+        }
+        div:nth-child(3) {
+            align-self: flex-end ;
+        }
+    }
+
+
+
+    .card.h-100 {
+        align-items: center;
+    }  
+
+    .card-img-top {
+        max-width: 75%;
+    }
+
+    .col-sm.col-md-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: $box-shadow-sm;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .card-img-top {
+        max-width: 75%;
+    }
+
+    .card-footer {
+        background-color: white;
+        border-top: none;
+        background-image: url(../../img/bg-dots.svg);
+        background-repeat: repeat-x;
+        background-position: top;
+        padding: 25px 0 0 0;
+    }
+
+}
+@media (min-width: 992px) {
+        
+    #dowload {
+        margin-top: 100px;
+    }
+  }
 
 
 
