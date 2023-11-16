@@ -292,6 +292,73 @@ article {
     }
   }
 
+  // Artículo 4 FAQs
+
+#faqs {
+
+    padding: 0 4em;
+    margin-top: 700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    h4.accordion-header, h4.accordion-header:active {
+        border: none;
+    }
+    
+    button:focus:not(:focus-visible) {
+        outline: none;
+    }
+    .accordion-button::after{
+      background-image: url(../../img/icon-arrow.svg);
+      background-color: white;
+    }
+
+    .accordion-button:focus {
+        z-index: 3;
+        border-color: white; 
+        outline: 0;
+        box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+    }
+  
+    .accordion-flush, .accordion-header, .accordion-button:not(.collapsed), .accordion-collapse.collapse, .accordion-collapse.collapse.show {
+      background-color: white;
+      border: none;
+      }
+
+    button:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+       
+  
+    h4 {
+      font-weight: 500;
+    }
+  
+    .accordion-flush .accordion-collapse {
+      color: $texto;
+    }
+    .accordion-item:hover {
+      border-bottom: solid 2px $secondary;
+  
+    }
+    .row-cols-7 {
+      justify-content: center;
+      display: flex;
+      margin-top: 20px;
+  }
+  }
+
+  @media (min-width: 572px) {
+        
+    #faqs {
+        margin-top: 100px;
+    }
+  }
+
 
 
 

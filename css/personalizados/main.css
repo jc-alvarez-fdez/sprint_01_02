@@ -9117,6 +9117,43 @@ article .izda {
 @media (min-width: 992px) {
   #dowload {
     margin-top: 100px; } }
+#faqs {
+  padding: 0 4em;
+  margin-top: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #faqs h4.accordion-header, #faqs .accordion-header.h4, #faqs h4.accordion-header:active, #faqs .accordion-header.h4:active {
+    border: none; }
+  #faqs button:focus:not(:focus-visible) {
+    outline: none; }
+  #faqs .accordion-button::after {
+    background-image: url(../../img/icon-arrow.svg);
+    background-color: white; }
+  #faqs .accordion-button:focus {
+    z-index: 3;
+    border-color: white;
+    outline: 0;
+    box-shadow: var(--bs-accordion-btn-focus-box-shadow); }
+  #faqs .accordion-flush, #faqs .accordion-header, #faqs .accordion-button:not(.collapsed), #faqs .accordion-collapse.collapse, #faqs .accordion-collapse.collapse.show {
+    background-color: white;
+    border: none; }
+  #faqs button:focus:not(:focus-visible) {
+    outline: none; }
+  #faqs h4, #faqs .h4 {
+    font-weight: 500; }
+  #faqs .accordion-flush .accordion-collapse {
+    color: #999999; }
+  #faqs .accordion-item:hover {
+    border-bottom: solid 2px #FA5959; }
+  #faqs .row-cols-7 {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px; }
+
+@media (min-width: 572px) {
+  #faqs {
+    margin-top: 100px; } }
 @media (max-width: 992px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     text-align: center; } }
