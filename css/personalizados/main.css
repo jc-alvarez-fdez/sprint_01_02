@@ -8965,13 +8965,14 @@ body {
   font-size: 0.9em;
   padding: 20px 4em; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     padding-top: 10vh;
     text-align: center; }
 
   .navbar {
-    background-color: #d3d3d3f7; }
+    background-color: #fffffff7;
+    box-shadow: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18); }
 
   div#navbarNav {
     margin-top: 40px;
@@ -8985,9 +8986,15 @@ body {
         background-color: initial;
         border-color: var(--bs-gray-600);
         width: 100%; } }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #menu_principal {
-    padding: 4em; }
+    padding: 2em 4em;
+    background-color: #fffffff7;
+    box-shadow: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18); }
+
+  .navbar {
+    background-color: #fffffff7;
+    box-shadow: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18); }
 
   .navbar-expand-md .navbar-collapse {
     display: flex !important;
@@ -9041,12 +9048,37 @@ article .izda {
   width: 84%;
   border-radius: 0 0 0 30%; }
 
-/*
+#features {
+  padding: 0 4em; }
+  #features .nav-tabs {
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  #features .nav-tabs, #features .nav-link, #features .nav-tabs:hover, #features .nav-link:hover, #features .nav-tabs:active, #features .nav-link:active {
+    background: none;
+    border: none; }
+  #features .nav-tabs, #features .nav-link {
+    border-bottom: 1px solid #d3d2d2;
+    color: #999999; }
+  #features .nav-link.active {
+    color: black;
+    font-size: large;
+    border-width: medium;
+    border-color: #FA5959; }
+
+@media (min-width: 992px) {
+  #features .nav-tabs {
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+    align-items: center; } }
 @media (max-width: 992px) {
-    .container-fluid {
-      text-align: center;
-    }   
-  }
-*/
+  .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
