@@ -1,0 +1,192 @@
+//Cambio el tema de color sustituyendo las variables para primary y secondary
+
+$primary: #5265E1;
+$secondary: #FA5959;
+$light: #d3d2d2;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+);
+
+
+// Variables personalizadas
+$texto: #999999;
+$accordion-button-icon:         url(../../img/icon-close.svg);
+$accordion-button-active-icon:  url(../../img/icon-close.svg);
+$navbar-light-toggler-icon-bg:  url(../../img/icon-hamburger.svg);
+
+//$box-shadow-sm: 0 .325rem .75rem rgba(black, .075);
+$box-shadow-sm: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18);
+@import "../scss_boostrap/bootstrap.scss";
+
+//______________________________
+
+body {
+    font: 1rem/1.5 var(--bs-font-sans-serif);
+    padding-top: 18vh;
+    //position: relative;
+  }
+
+
+  .row {
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card-title {
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .card-text {
+    color: $texto;
+  }
+  
+
+// Barra navegación
+
+#menu_principal {
+    font-size: 0.9em;
+    padding: 20px 4em;
+}
+
+@media (max-width: 768px){
+
+    body {
+        padding-top: 10vh;
+        text-align: center;
+         
+          
+    }
+    .navbar {
+        background-color: #d3d3d3f7;
+    }
+    div#navbarNav {
+        margin-top: 40px;
+        text-align: center;
+
+        li.nav-item {
+            padding: 20px;
+            letter-spacing: 0.06em;
+            border-top: 1px solid var(--bs-gray-600);
+        
+                button.btn.btn-secondary {
+                    color: $texto;
+                    background-color: initial;
+                    border-color: var(--bs-gray-600);
+                    width: 100%;
+                }
+        }        
+    }    
+}
+@media (min-width: 768px) {
+
+    #menu_principal{
+        padding: 4em;
+    }
+    .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+
+        li.nav-item {
+            margin-left: 20px;
+            letter-spacing: 0.06em;
+
+            .navbar-collapse button {
+                margin-left: 20px;
+                letter-spacing: 0.06em;
+                color: white;
+            }
+            button.btn.btn-secondary {
+                color: white;
+                box-shadow: $box-shadow-sm;
+                letter-spacing: 0.06em;
+                padding: 6px 20px;
+            }
+        }
+    }
+
+    div#navbarNav.navbar-collapse.collapse.show  {
+        
+        ul.navbar-nav {
+            align-items: center; 
+         }
+    }
+    
+
+  
+}
+
+// Artículo 1 - Hero
+
+#hero {
+    padding: 0 4em;
+    a {
+    margin: 10px;
+    }
+
+    a.btn.btn-light {
+    box-shadow: $box-shadow-sm;
+    }
+
+    @media (max-width: 992px) {
+        .container-fluid {
+          text-align: center;
+        }   
+      }
+}
+
+// Imágenes con fondo geométrico
+
+article {
+
+    .img_fondo {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+  
+    div.fondo {
+      background-color: #5265E1;
+      position: absolute;
+      z-index: -1;
+    }
+  
+    .dcha {
+      bottom: -70px;
+      left: -10vw;
+      height: 96%;
+      width: 87%;
+      border-radius: 0 0 30% 0;
+    }
+  
+    .izda {
+      bottom: -13px;
+      right: -10vw;
+      height: 80%;
+      width: 84%;
+      border-radius: 0 0 0 30%;
+    }
+  }
+  
+  
+
+
+
+// ______________________________________________
+/*
+@media (max-width: 992px) {
+    .container-fluid {
+      text-align: center;
+    }   
+  }
+*/
