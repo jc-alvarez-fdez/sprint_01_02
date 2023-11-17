@@ -17,7 +17,6 @@ $accordion-button-icon:         url(../../img/icon-close.svg);
 $accordion-button-active-icon:  url(../../img/icon-close.svg);
 $navbar-light-toggler-icon-bg:  url(../../img/icon-hamburger.svg);
 
-//$box-shadow-sm: 0 .325rem .75rem rgba(black, .075);
 $box-shadow-sm: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18);
 @import "../scss_boostrap/bootstrap.scss";
 
@@ -26,7 +25,6 @@ $box-shadow-sm: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18);
 body {
     font: 1rem/1.5 var(--bs-font-sans-serif);
     padding-top: 18vh;
-    //position: relative;
   }
 
 
@@ -56,7 +54,7 @@ body {
     padding: 20px 4em;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 768px) {
 
     body {
         padding-top: 10vh;
@@ -65,7 +63,6 @@ body {
           
     }
     .navbar {
-        //background-color: #d3d3d3f7;
         background-color: #fffffff7;
         box-shadow: $box-shadow-sm;
     }
@@ -87,7 +84,7 @@ body {
         }        
     }    
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
 
     #menu_principal{
         padding: 2em 4em;
@@ -303,61 +300,144 @@ article {
     flex-direction: column;
     align-items: center;
 
-    
-    h4.accordion-header, h4.accordion-header:active {
-        border: none;
+      .accordion {
+      --bs-accordion-active-bg: white;
     }
     
-    button:focus:not(:focus-visible) {
-        outline: none;
+    .accordion-item {
+      color: $texto;
+     } 
+
+    .accordion-button:focus {
+      border-color:white;
+      box-shadow:none;
     }
+
+    .accordion-button:not(.collapsed) {
+      color: black;
+      border-bottom: 2px solid $secondary;
+    }
+    
     .accordion-button::after{
       background-image: url(../../img/icon-arrow.svg);
       background-color: white;
     }
+    .col-md-6 {
+      text-align: center;
+  }
 
-    .accordion-button:focus {
-        z-index: 3;
-        border-color: white; 
-        outline: 0;
-        box-shadow: var(--bs-accordion-btn-focus-box-shadow);
+  }
+
+  @media (min-width: 572px) {      
+    #faqs {
+       margin-top: 100px;
+    }
+  }
+
+
+// Artículo 5 formulario
+
+#pie {
+
+    color: #ffffff;
+    background-color: #5265E1;
+    padding: 2em 4em;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+  
+    .col-lg:first-of-type {
+      margin-top: 40px;
+    }
+
+    h6 {
+      letter-spacing: 0.08em;
+      font-size: .8em;
+    }
+
+    ::placeholder {
+      color: $light;
+      text-align: center;
+      box-shadow: none;
     }
   
-    .accordion-flush, .accordion-header, .accordion-button:not(.collapsed), .accordion-collapse.collapse, .accordion-collapse.collapse.show {
-      background-color: white;
-      border: none;
+    button.btn.btn-secondary {
+      color: white;
+      box-shadow: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.6);
+      letter-spacing: 0.06em;
+      padding: 6px 60px;
+    }
+
+    form {
+      display: flex;
+      margin-top: 0px;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+  }
+
+    .form-text {
+      margin-top: 0.25rem;
+      font-size: 0.875em;
+      color: white;
+    }
+    input {
+      z-index: 3;
+      position: relative;
+    }
+    .alert-secondary {
+      --bs-alert-color: white;
+      --bs-alert-bg: #dc3545;
+      --bs-alert-border-color: #dc3545;
+      margin-top: -5px;
+  }
+
+
+  .navbar {
+
+      background-color: #002cc1f7;
+      box-shadow: none;
+      align-items: baseline;
+      margin: 0 -5em  -5em -5em;
+      padding: 1em 4em;
+      align-content: center;
+      flex-direction: column;
+
+      .rrss {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+  
+
+      a {
+        color: white;
       }
 
-    button:focus:not(:focus-visible) {
-        outline: none;
-    }
+      li > div {
+          padding-top: 4px;
+      }
+}
+*/
+}
 
-       
-  
-    h4 {
-      font-weight: 500;
-    }
-  
-    .accordion-flush .accordion-collapse {
-      color: $texto;
-    }
-    .accordion-item:hover {
-      border-bottom: solid 2px $secondary;
-  
-    }
-    .row-cols-7 {
-      justify-content: center;
-      display: flex;
-      margin-top: 20px;
-  }
-  }
 
-  @media (min-width: 572px) {
-        
-    #faqs {
-        margin-top: 100px;
-    }
-  }
+@media (max-width: 768px) {
+
+  
+}
+
+  
+
+
+
+
 
 
 
