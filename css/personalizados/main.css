@@ -8967,6 +8967,9 @@ body {
 #menu_principal {
   font-size: 0.9em;
   padding: 20px 4em; }
+  #menu_principal a:hover {
+    color: #FA5959;
+    font-weight: 800; }
 
 @media (max-width: 768px) {
   body {
@@ -8976,6 +8979,14 @@ body {
   .navbar {
     background-color: #fffffff7;
     box-shadow: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18); }
+
+  .navbar-toggler,
+  .navbar-toggler:focus {
+    border: none;
+    border-radius: none; }
+
+  button:focus:not(:focus-visible) {
+    outline: none; }
 
   div#navbarNav {
     margin-top: 40px;
@@ -8988,7 +8999,10 @@ body {
         color: #999999;
         background-color: initial;
         border-color: var(--bs-gray-600);
-        width: 100%; } }
+        width: 100%; }
+      div#navbarNav li.nav-item button.btn.btn-secondary:hover {
+        color: #FA5959;
+        border-color: #FA5959; } }
 @media (min-width: 768px) {
   #menu_principal {
     padding: 2em 4em;
@@ -9015,6 +9029,10 @@ body {
         box-shadow: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18);
         letter-spacing: 0.06em;
         padding: 6px 20px; }
+      .navbar-expand-md .navbar-collapse li.nav-item button.btn.btn-secondary:hover {
+        color: #FA5959;
+        border-color: #FA5959;
+        background-color: #ffffff; }
 
   div#navbarNav.navbar-collapse.collapse.show ul.navbar-nav {
     align-items: center; } }
@@ -9022,6 +9040,14 @@ body {
   padding: 0 4em; }
   #hero a {
     margin: 10px; }
+  #hero .btn-primary:hover {
+    color: #5265E1;
+    background-color: white;
+    border-color: #5265E1; }
+  #hero .btn-light:hover {
+    color: grey;
+    background-color: white;
+    border-color: #d3d2d2; }
   #hero a.btn.btn-light {
     box-shadow: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18); }
   @media (max-width: 992px) {
@@ -9071,6 +9097,15 @@ article .izda {
     font-size: large;
     border-width: medium;
     border-color: #FA5959; }
+  #features .nav-link:hover {
+    color: #FA5959;
+    font-size: large;
+    border-width: medium;
+    border-color: #d3d2d2; }
+  #features .btn-primary:hover {
+    color: #5265E1;
+    background-color: white;
+    border-color: #5265E1; }
 
 @media (min-width: 992px) {
   #features .nav-tabs {
@@ -9116,6 +9151,10 @@ article .izda {
     background-repeat: repeat-x;
     background-position: top;
     padding: 25px 0 0 0; }
+    #dowload .card-footer .btn-primary:hover {
+      color: #5265E1;
+      background-color: white;
+      border-color: #5265E1; }
 
 @media (min-width: 992px) {
   #dowload {
@@ -9126,6 +9165,13 @@ article .izda {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  #faqs button:hover {
+    color: #FA5959;
+    font-weight: 500; }
+  #faqs .btn-primary:hover {
+    color: #5265E1;
+    background-color: white;
+    border-color: #5265E1; }
   #faqs .accordion {
     --bs-accordion-active-bg: white; }
   #faqs .accordion-item {
@@ -9168,6 +9214,10 @@ article .izda {
     box-shadow: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.6);
     letter-spacing: 0.06em;
     padding: 6px 60px; }
+  #pie button.btn.btn-secondary:hover {
+    color: #FA5959;
+    border-color: #FA5959;
+    background-color: #ffffff; }
   #pie form {
     display: flex;
     margin-top: 0px;
@@ -9196,6 +9246,11 @@ article .izda {
   margin: 0 -12px;
   justify-content: center;
   align-items: baseline; }
+  #menu_pie a:hover {
+    color: #FA5959;
+    font-weight: 500; }
+  #menu_pie .rrss img {
+    background-color: #FA5959; }
   #menu_pie li {
     margin: 0 1em; }
   #menu_pie li.rrss {

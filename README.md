@@ -55,3 +55,8 @@ Només falta un bloc per acabar la web: el footer.
 Requisits mínims
 - Fer servir els formularis de Bootstrap.
 - Mostrar un missatge d'error quan el formulari del butlletí de notícies s'envia, i el camp d'entrada és buit o l'adreça de correu electrònic no està formatada correctament. S'ha de fer amb Bootstrap.
+
+Nivell 3
+_________________________________________
+- Exercici 6
+Modificar els estats actius dels botons, links, tabs i avisos de la web, perquè quedin així quan es passi el cursor per sobre:

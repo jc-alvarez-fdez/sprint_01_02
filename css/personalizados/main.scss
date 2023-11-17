@@ -18,6 +18,7 @@ $accordion-button-active-icon:  url(../../img/icon-close.svg);
 $navbar-light-toggler-icon-bg:  url(../../img/icon-hamburger.svg);
 
 $box-shadow-sm: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.18);
+
 @import "../scss_boostrap/bootstrap.scss";
 
 //______________________________
@@ -55,7 +56,14 @@ body {
 #menu_principal {
     font-size: 0.9em;
     padding: 20px 4em;
+
+    a:hover {
+      color: $secondary;
+      font-weight: 800;
+    }
 }
+
+
 
 @media(max-width: 768px) {
 
@@ -69,6 +77,15 @@ body {
         background-color: #fffffff7;
         box-shadow: $box-shadow-sm;
     }
+    
+    .navbar-toggler,
+    .navbar-toggler:focus {
+      border: none; 
+      border-radius: none;
+  }
+     button:focus:not(:focus-visible) {
+    outline:none;
+  }
     div#navbarNav {
         margin-top: 40px;
         text-align: center;
@@ -84,6 +101,10 @@ body {
                     border-color: var(--bs-gray-600);
                     width: 100%;
                 }
+                button.btn.btn-secondary:hover {
+                  color: $secondary;
+                  border-color: $secondary;
+              }
         }        
     }    
 }
@@ -95,7 +116,6 @@ body {
         box-shadow: $box-shadow-sm;
     }
     .navbar {
-        //background-color: #d3d3d3f7;
         background-color: #fffffff7;
         box-shadow: $box-shadow-sm;
     }
@@ -119,6 +139,11 @@ body {
                 letter-spacing: 0.06em;
                 padding: 6px 20px;
             }
+            button.btn.btn-secondary:hover {
+              color: $secondary;
+              border-color: $secondary;
+              background-color: #ffffff;
+          }
         }
     }
 
@@ -136,6 +161,16 @@ body {
     padding: 0 4em;
     a {
     margin: 10px;
+    }
+    .btn-primary:hover {
+      color: $primary;
+      background-color: white;
+      border-color: $primary;
+    }
+    .btn-light:hover {
+      color: grey;
+      background-color: white;
+      border-color: $light;
     }
 
     a.btn.btn-light {
@@ -215,6 +250,17 @@ article {
         border-width: medium;
         border-color: $secondary;
     }
+    .nav-link:hover {
+      color: $secondary;
+      font-size: large;
+      border-width: medium;
+      border-color: $light;
+    }
+    .btn-primary:hover {
+      color: $primary;
+      background-color: white;
+      border-color: $primary;
+    }
   }
       @media (min-width: 992px) {
         
@@ -282,7 +328,15 @@ article {
         background-repeat: repeat-x;
         background-position: top;
         padding: 25px 0 0 0;
+
+        .btn-primary:hover {
+          color: $primary;
+          background-color: white;
+          border-color: $primary;
+        }
     }
+
+    
 
 }
 @media (min-width: 992px) {
@@ -303,6 +357,16 @@ article {
     flex-direction: column;
     align-items: center;
 
+    button:hover {
+      color: $secondary;
+      font-weight: 500;
+    }
+    .btn-primary:hover {
+      color: $primary;
+      background-color: white;
+      border-color: $primary;
+    }
+
       .accordion {
       --bs-accordion-active-bg: white;
     }
@@ -320,14 +384,15 @@ article {
       color: black;
       border-bottom: 2px solid $secondary;
     }
-    
+ 
     .accordion-button::after{
       background-image: url(../../img/icon-arrow.svg);
       background-color: white;
     }
     .col-md-6 {
       text-align: center;
-  }
+    }
+    
 
   }
 
@@ -374,6 +439,13 @@ article {
       padding: 6px 60px;
     }
 
+    button.btn.btn-secondary:hover {
+      color: $secondary;
+      border-color: $secondary;
+      background-color: #ffffff;
+
+    }
+
     form {
       display: flex;
       margin-top: 0px;
@@ -410,6 +482,14 @@ article {
   justify-content: center;
   align-items: baseline;
   
+  a:hover {
+    color: $secondary;
+    font-weight: 500;
+  }
+  .rrss img {
+    background-color: $secondary;
+  }
+
   li {
     margin: 0 1em;
   }
