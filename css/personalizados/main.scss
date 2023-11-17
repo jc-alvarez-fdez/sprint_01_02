@@ -27,6 +27,9 @@ body {
     padding-top: 18vh;
   }
 
+  .container-fluid {
+    overflow: hidden;
+  }  
 
   .row {
     gap: 30px;
@@ -362,7 +365,6 @@ article {
     ::placeholder {
       color: $light;
       text-align: center;
-      box-shadow: none;
     }
   
     button.btn.btn-secondary {
@@ -375,7 +377,7 @@ article {
     form {
       display: flex;
       margin-top: 0px;
-      align-items: center;
+      align-items: baseline;
       gap: 20px;
       flex-wrap: wrap;
       align-content: center;
@@ -397,41 +399,31 @@ article {
       --bs-alert-border-color: #dc3545;
       margin-top: -5px;
   }
-
-
-  .navbar {
-
-      background-color: #002cc1f7;
-      box-shadow: none;
-      align-items: baseline;
-      margin: 0 -5em  -5em -5em;
-      padding: 1em 4em;
-      align-content: center;
-      flex-direction: column;
-
-      .rrss {
-        text-align: center;
-        margin: 0 auto;
-        padding: 0;
-    }
-  
-
-      a {
-        color: white;
-      }
-
-      li > div {
-          padding-top: 4px;
-      }
-}
-*/
-}
-
-
-@media (max-width: 768px) {
-
   
 }
+
+#menu_pie {
+  padding: 1em 4em;
+  box-shadow: none;
+  background-color: #3030de;
+  margin: 0 -12px;
+  justify-content: center;
+  align-items: baseline;
+  
+  li {
+    margin: 0 1em;
+  }
+
+  li.rrss {
+    margin-left: 3em;
+  }
+
+  a {
+    color:#ffffff
+  }
+}
+
+
 
   
 

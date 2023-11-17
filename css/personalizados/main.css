@@ -8947,6 +8947,9 @@ body {
   font: 1rem/1.5 var(--bs-font-sans-serif);
   padding-top: 18vh; }
 
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  overflow: hidden; }
+
 .row {
   gap: 30px;
   justify-content: center; }
@@ -8965,7 +8968,7 @@ body {
   font-size: 0.9em;
   padding: 20px 4em; }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body {
     padding-top: 10vh;
     text-align: center; }
@@ -8986,7 +8989,7 @@ body {
         background-color: initial;
         border-color: var(--bs-gray-600);
         width: 100%; } }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #menu_principal {
     padding: 2em 4em;
     background-color: #fffffff7;
@@ -9123,37 +9126,83 @@ article .izda {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  #faqs h4.accordion-header, #faqs .accordion-header.h4, #faqs h4.accordion-header:active, #faqs .accordion-header.h4:active {
-    border: none; }
-  #faqs button:focus:not(:focus-visible) {
-    outline: none; }
+  #faqs .accordion {
+    --bs-accordion-active-bg: white; }
+  #faqs .accordion-item {
+    color: #999999; }
+  #faqs .accordion-button:focus {
+    border-color: white;
+    box-shadow: none; }
+  #faqs .accordion-button:not(.collapsed) {
+    color: black;
+    border-bottom: 2px solid #FA5959; }
   #faqs .accordion-button::after {
     background-image: url(../../img/icon-arrow.svg);
     background-color: white; }
-  #faqs .accordion-button:focus {
-    z-index: 3;
-    border-color: white;
-    outline: 0;
-    box-shadow: var(--bs-accordion-btn-focus-box-shadow); }
-  #faqs .accordion-flush, #faqs .accordion-header, #faqs .accordion-button:not(.collapsed), #faqs .accordion-collapse.collapse, #faqs .accordion-collapse.collapse.show {
-    background-color: white;
-    border: none; }
-  #faqs button:focus:not(:focus-visible) {
-    outline: none; }
-  #faqs h4, #faqs .h4 {
-    font-weight: 500; }
-  #faqs .accordion-flush .accordion-collapse {
-    color: #999999; }
-  #faqs .accordion-item:hover {
-    border-bottom: solid 2px #FA5959; }
-  #faqs .row-cols-7 {
-    justify-content: center;
-    display: flex;
-    margin-top: 20px; }
+  #faqs .col-md-6 {
+    text-align: center; }
 
 @media (min-width: 572px) {
   #faqs {
     margin-top: 100px; } }
+#pie {
+  color: #ffffff;
+  background-color: #5265E1;
+  padding: 2em 4em;
+  margin-top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
+  #pie .col-lg:first-of-type {
+    margin-top: 40px; }
+  #pie h6, #pie .h6 {
+    letter-spacing: 0.08em;
+    font-size: .8em; }
+  #pie ::placeholder {
+    color: #d3d2d2;
+    text-align: center; }
+  #pie button.btn.btn-secondary {
+    color: white;
+    box-shadow: 0.225rem 0.225rem 0.55rem rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.06em;
+    padding: 6px 60px; }
+  #pie form {
+    display: flex;
+    margin-top: 0px;
+    align-items: baseline;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center; }
+  #pie .form-text {
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: white; }
+  #pie input {
+    z-index: 3;
+    position: relative; }
+  #pie .alert-secondary {
+    --bs-alert-color: white;
+    --bs-alert-bg: #dc3545;
+    --bs-alert-border-color: #dc3545;
+    margin-top: -5px; }
+
+#menu_pie {
+  padding: 1em 4em;
+  box-shadow: none;
+  background-color: #3030de;
+  margin: 0 -12px;
+  justify-content: center;
+  align-items: baseline; }
+  #menu_pie li {
+    margin: 0 1em; }
+  #menu_pie li.rrss {
+    margin-left: 3em; }
+  #menu_pie a {
+    color: #ffffff; }
+
 @media (max-width: 992px) {
   .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
     text-align: center; } }

@@ -45,3 +45,13 @@ Requisits mínims
 - Fer servir el component "Accordion" i personalitzar les classes per a adaptar-lo al disseny.
 - Responsive.
 - Botó de Bootstrap.
+
+
+Nivell 2
+_________________________________________
+- Exercici 5
+Només falta un bloc per acabar la web: el footer.
+
+Requisits mínims
+- Fer servir els formularis de Bootstrap.
+- Mostrar un missatge d'error quan el formulari del butlletí de notícies s'envia, i el camp d'entrada és buit o l'adreça de correu electrònic no està formatada correctament. S'ha de fer amb Bootstrap.
